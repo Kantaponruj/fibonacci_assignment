@@ -10,12 +10,12 @@ Map<int, int> generateFibonacci(int count) {
 }
 
 FibonacciType getFibonacciType(int number) {
-  if (number % 5 == 0) {
+  if (number % 3 == 0) {
     return FibonacciType.circle;
-  } else if (number % 2 == 0) {
-    return FibonacciType.close;
-  } else {
+  } else if (number % 3 == 1) {
     return FibonacciType.square;
+  } else {
+    return FibonacciType.close;
   }
 }
 
